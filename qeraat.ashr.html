@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>القراءات العشر</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>القراءات العشر</h1>
+        <ul id="readings-list">
+            <li><strong>قراءة نافع المدني</strong>: رواها قالون وورش</li>
+            <li><strong>قراءة ابن كثير المكي</strong>: رواها البزي وقنبل</li>
+            <li><strong>قراءة أبو عمرو البصري</strong>: رواها الدوري والسوسي</li>
+            <li><strong>قراءة ابن عامر الشامي</strong>: رواها هشام وابن ذكوان</li>
+            <li><strong>قراءة عاصم الكوفي</strong>: رواها شعبة وحفص</li>
+            <li><strong>قراءة حمزة الكوفي</strong>: رواها خلف وخلاد</li>
+            <li><strong>قراءة الكسائي الكوفي</strong>: رواها أبو الحارث والدوري</li>
+            <li><strong>قراءة أبو جعفر المدني</strong>: رواها ابن وردان وابن جماز</li>
+            <li><strong>قراءة يعقوب الحضرمي</strong>: رواها رويس وروح</li>
+            <li><strong>قراءة خلف البزار</strong>: رواها إسحاق وإدريس</li>
+        </ul>
+        <button id="toggle-button">إظهار/إخفاء القراءات</button>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    max-width: 600px;
+    width: 100%;
+}
+
+h1 {
+    color: #007BFF;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #007BFF;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+    </style>
+
+    <script>
+        $(document).ready(function() {
+    $("#toggle-button").click(function() {
+        $("#readings-list").toggle();
+    });
+});
+
+    </script>
+</body>
+</html>
