@@ -1,0 +1,2 @@
+# qeraat.ashr
+qeraat.ashr
